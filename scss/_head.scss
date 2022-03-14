@@ -1,0 +1,50 @@
+.iconos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: solid 2px gray;
+    background-color: #00011f;
+}
+.iconos ul li{
+    color: #CAF0F8;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+    padding-top: 30px;
+    margin-bottom: 10px;
+}
+.iconoGatuno{
+    width: 15%;
+    margin-right: 5px;
+}
+.cabecera{
+    margin-top: -200px;
+    background-image: url(../imagenes/fondo_cabecera.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 200px;
+    padding-top: 350px;
+    border-bottom: solid 2px gray;
+}
+@media screen and (max-width: 768px){
+    .cabecera {
+    background-image: url(../imagenes/fondo_cabecera_celular.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    }
+}
+.subtitulocabecera{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 150;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    padding-right: 80px;
+}

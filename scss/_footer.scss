@@ -1,0 +1,45 @@
+footer{
+    background-color: #03045E;
+    border-top: solid 2px #00011f;
+    padding-top: 20px;
+    padding-bottom: 80px;
+}
+.textoFooter{
+    text-align: center;
+    color: white;
+}
+footer section ul{
+    list-style-type: none;
+    text-align: center;
+}
+footer section ul li{
+    
+    display: inline-block;
+    margin: 10px;
+    color: white;
+}
+footer section img{
+    margin: auto;
+    display: block;
+}
+.sectionFooter{
+    padding-bottom: 100px;
+}
+.logoFacebook{
+    width: 50px;
+    grid-column: 2;
+}
+.logoInstagram{
+    width: 50px;
+    grid-column: 3;
+}
+.logoYoutube{
+    width: 60px;
+    grid-column: 4;
+}
+footer div{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
+}

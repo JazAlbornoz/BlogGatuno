@@ -1,0 +1,60 @@
+.quienesSomos{
+    padding-left: 30px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+    display: grid;
+}
+.gatoQuienesSomos{
+    width: 70%;
+    border-radius: 5px;
+}
+@media screen and (max-width: 882px){
+    .quienesSomos {
+        grid-template-columns: 100%;
+    }
+    .gatoQuienesSomos{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 882px){
+    .quienesSomos {
+        grid-template-columns: 50% 50%;
+    }
+}
+.seguinos {
+    grid-column: 2 / 5 ;
+    grid-row: 2;
+}
+.redes{
+    grid-column: 2 / 5;
+    grid-row: 3;
+    text-align: center;
+}
+.logoFacebookNos{
+    width: 50px;
+}
+.logoInstagramNos{
+    width: 50px;
+}
+.logoYoutubeNos{
+    width: 60px;
+}
+
+.redesSociales{
+text-align: center;
+}
+.sectionRedes{
+    background-image: url(../imagenes/fondo_redes.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border: solid 2px gray;
+    margin-bottom: -90px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
+    grid-template-rows: 10fr 10fr 10fr 10fr;
+}

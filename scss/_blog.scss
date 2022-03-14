@@ -1,0 +1,332 @@
+.articulos{
+    background-color:#CAF0F8;
+    margin-top: -40px;
+    margin-bottom: auto;
+    display: grid;
+    padding-left: 70px;
+}
+@media screen and (max-width: 1186px){
+    .articulos {
+        grid-template-columns: 50% 50%;
+    }
+}
+@media screen and (min-width: 1186px){
+    .articulos {
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+}
+@media screen and (max-width: 882px){
+    .articulos {
+        grid-template-columns: 100%;
+        padding-left: 20px;
+    }
+}
+.card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.37)
+}
+.card-body{
+    height: 350px;
+}  
+.card-title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding-top: 10px;
+}  
+.card-subtitle{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.botonCard{
+    background-color: #03045E;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    &:hover{
+        background-color: #00011f;
+        color: white;
+    }
+}
+.asideQuienesSomos{
+    display: flex;
+    justify-content: center;
+}
+.imagenBlog{
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10;
+    margin: 10;
+}
+.artBlog{
+    border: solid 2px #00011f77;
+    border-radius: 10px;
+    box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.37);
+    margin-right: 70px;
+    margin-left: 30px;
+    width: 350px;
+    height: 550px;
+}
+.gatoArt{
+    width: 100%;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin-bottom: -265px;
+    margin-top: -100px;
+}
+.botonesArt{
+    list-style-type: none;
+    text-align: center;
+}
+.botonesArt li{
+    background-color: grey;
+    padding: 10px;
+    border-radius: 40px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.paginationBlog{
+    color: #03045E;
+}
+.sectionboton{
+    background-color: #CAF0F8;
+    display: flex;
+    justify-content: center;
+ }
+ .boton{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-decoration-line: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px;
+    margin-top: 30px; 
+    margin-bottom: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: #03045E;
+    &:hover{
+        background-color: white;
+        color: #03045E;
+    }
+}
+.sectionArt{
+    display: grid;
+}
+    @media screen and (max-width: 1186px){
+        .sectionArt {
+            grid-template-columns: 50% 50%;
+        }
+    }
+    @media screen and (min-width: 1186px){
+        .sectionArt {
+            grid-template-columns: 25% 25% 25% 25% ;
+            grid-template-rows: 15% 10.6% 15% 10.6% 15% 10.6%;
+        }
+    }
+    @media screen and (max-width: 882px){
+        .sectionArt {
+            grid-template-columns: 100%;
+            padding-left: 20px;
+        }
+    }
+.botonArtBlog{
+    background-color: #00011f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.buscarBoton{
+    grid-column: 4;
+    grid-row: 1;
+}
+
+.dropbtn {
+    background-color: #00011f;
+    color: white;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #03045E;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown a:hover {
+      background-color: #ddd;
+}
+  
+.show {
+      display: block;
+}
+.barraLateral{
+    display: grid;
+    grid-column: 4;
+    grid-row: 1 / 3;
+    padding-left: 10px;
+}
+.barraSuperior{
+display: grid;
+}
+@media screen and (max-width: 1186px){
+    .barraSuperior {
+        grid-template-columns: 80% 20%;
+    }
+}
+.buscador{
+    grid-column: 1;
+    display: grid;
+    @media screen and (max-width: 1186px){
+        .buscador {
+            grid-template-columns: 33.3% 33.3% 33.3%;
+        }
+    }
+}
+.dropdownBlog{
+    grid-column: 2;
+    margin-left: 800px;
+    margin-top: 30px;
+}
+.tituloBuscador{
+    grid-column: 1;
+}
+.input-buscador{
+    grid-column: 2;
+}
+.boton-buscador{
+    grid-column: 2;
+}
+#buscador{
+    margin-left: 30px;
+}
+.buscar{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.formularioAside{
+    .formularioAside{
+        padding-left: 20px;
+        padding-right: -20px;
+        margin-top: 10px;
+        padding-bottom: 70px;
+        padding-top: 70px;
+        display: grid;
+    }
+    @media screen and (min-width: 882px){
+        .formularioAside {
+            grid-template-columns: 100%;
+        }
+    }
+    @media screen and (max-width: 882px){
+        .formularioAside {
+            padding-left: 20px;
+            padding-bottom: 70px;
+            grid-template-columns: 100%;
+        }
+        .gatoFormAside{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+.gatoFormAside{
+    width: 60%;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 80px;
+    margin-right: auto;
+}
+.labelNombreAside{
+    font-size: 20px;
+    grid-row: 1;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+}
+.nombreAside{
+    width: 70%;
+    height: 50%;
+    grid-row: 2;
+    margin-top: -15px;
+    margin-left: 10px;
+}
+.labelCorreoAside{
+    font-size: 20px;
+    grid-row: 3;
+    margin-top: -5px;
+    margin-left: 10px;
+}
+.correoAside{
+    width: 70%;
+    height: 50%;
+    grid-row: 4;
+    margin-top: -25px;
+    margin-left: 10px;
+}
+.botonFormAside{
+    text-decoration: none;
+    text-decoration-line: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #03045E;
+    &:hover{
+        background-color: white;
+        color: #03045E;
+    }
+    grid-row: 5;
+    width: 30%;
+}
+.parrafoQSAside{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding-left: 10px;
+}
+.tituloFormAside{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #00011f;
+    font-weight: 500;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}

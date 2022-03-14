@@ -1,0 +1,599 @@
+header section {
+  background-color: #00011f;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(#000461, from), color-stop(#00011f, to));
+  background-image: linear-gradient(to bottom, from #000461, to #00011f);
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 10px;
+  border-bottom: solid 2px black;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (max-width: 768px) {
+  header section {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+header section img {
+  margin-left: 40px;
+}
+
+header section nav ul {
+  list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+  header section nav ul {
+    margin-left: 0px;
+  }
+}
+
+header section nav ul li {
+  display: inline-block;
+  margin-left: 60px;
+  margin-top: 70px;
+}
+
+.menu {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.menu:hover {
+  color: #CAF0F8;
+}
+
+.iconos {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border-bottom: solid 2px gray;
+  background-color: #CAF0F8;
+}
+
+.iconos ul li {
+  color: #00011f;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 10px;
+}
+
+.cabecera {
+  padding-bottom: 20px;
+  padding-right: -10px;
+  padding-left: -10px;
+  border-bottom: solid 2px gray;
+}
+
+.subtitulocabecera {
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.quienesSomos {
+  padding-left: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-right: 40px;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (max-width: 833px) {
+  .quienesSomos {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+@media screen and (min-width: 833px) {
+  .quienesSomos {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+.gatoQuienesSomos {
+  width: 70%;
+  border-radius: 5px;
+}
+
+.seguinos {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.redes {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  text-align: center;
+}
+
+.logoFacebookNos {
+  width: 50px;
+}
+
+.logoInstagramNos {
+  width: 50px;
+}
+
+.logoYoutubeNos {
+  width: 60px;
+}
+
+.redesSociales {
+  text-align: center;
+}
+
+.sectionRedes {
+  background-image: url(../imagenes/fondo_redes.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border: solid 2px gray;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-bottom: -90px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 1fr 1fr 1fr 5fr;
+      grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
+  -ms-grid-rows: 10fr 10fr 10fr 10fr;
+      grid-template-rows: 10fr 10fr 10fr 10fr;
+}
+
+.articulos {
+  background-color: #CAF0F8;
+  margin-top: -40px;
+  margin-bottom: auto;
+  display: -ms-grid;
+  display: grid;
+  padding-left: 40px;
+}
+
+.card {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  height: 270px;
+}
+
+.botonCard {
+  background-color: #03045E;
+  color: white;
+}
+
+.botonCard:hover {
+  background-color: #00011f;
+  color: white;
+}
+
+@media screen and (max-width: 1186px) {
+  .articulos {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (min-width: 1186px) {
+  .articulos {
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  .articulos {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+.asideQuienesSomos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imagenBlog {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 10;
+  margin: 10;
+}
+
+.artBlog {
+  border: solid 4px #CAF0F8;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+.gatoArt {
+  width: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-bottom: -200px;
+}
+
+.botonesArt {
+  list-style-type: none;
+  text-align: center;
+}
+
+.botonesArt li {
+  background-color: grey;
+  padding: 10px;
+  border-radius: 40px;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.paginationBlog {
+  color: #03045E;
+}
+
+.sectionboton {
+  background-color: #CAF0F8;
+  margin-right: -10px;
+  margin-left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.boton {
+  text-decoration: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  color: white;
+  background-color: #03045E;
+}
+
+.boton:hover {
+  background-color: white;
+  color: #03045E;
+}
+
+h1 {
+  color: #00011f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 61px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 60px;
+  font-weight: 900;
+}
+
+h2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: #00011f;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #00011f;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  padding-top: 250px;
+}
+
+.parrafoQS {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+.tituloQS, .tituloQS2 {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  color: #00011f;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding-bottom: 40px;
+}
+
+.tituloQS2 {
+  font-weight: 700;
+}
+
+.tituloForm {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #00011f;
+  font-weight: 500;
+  padding-bottom: 20px;
+  margin-top: 15px;
+}
+
+.titulos {
+  background-color: #CAF0F8;
+  margin-right: -10px;
+  margin-left: -10px;
+  margin-top: 40px;
+}
+
+.subtituloArticulos {
+  color: #1f1f1f;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.tituloArtBlog {
+  padding-top: 50px;
+}
+
+.titulosBlog {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #00011f;
+  font-weight: 500;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+
+.metadatos {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #00011f98;
+  padding-left: 10px;
+}
+
+.parrafoArt {
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #00011f;
+  padding-left: 10px;
+}
+
+.sectionContacto {
+  margin-top: 30px;
+  padding-bottom: 70px;
+  padding-left: 100px;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 882px) {
+  .sectionContacto {
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .sectionContacto {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+.imgGato {
+  width: 70%;
+  border-radius: 5px;
+}
+
+.sectionContacto ul li {
+  margin-top: 10px;
+  margin-left: 80px;
+  margin-right: 80px;
+  margin-bottom: 10px;
+}
+
+.listContacto {
+  list-style-type: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+  color: #03045E;
+}
+
+.gatoForm {
+  width: 60%;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.formulario {
+  margin-top: 10px;
+  padding-bottom: 70px;
+  padding-top: 70px;
+  display: -ms-grid;
+  display: grid;
+}
+
+@media screen and (min-width: 882px) {
+  .formulario {
+    -ms-grid-columns: 40% 60%;
+        grid-template-columns: 40% 60%;
+  }
+}
+
+@media screen and (max-width: 882px) {
+  .formulario {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+}
+
+.form {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.labelNombre {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-top: 10px;
+}
+
+.nombre {
+  width: 70%;
+  height: 70%;
+  -ms-grid-row: 2;
+  grid-row: 2;
+  margin-top: -10px;
+}
+
+.labelCorreo {
+  -ms-grid-row: 3;
+  grid-row: 3;
+  margin-top: 5px;
+}
+
+.correo {
+  width: 70%;
+  height: 70%;
+  -ms-grid-row: 4;
+  grid-row: 4;
+  margin-top: -15px;
+}
+
+.botonForm {
+  text-decoration: none;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  color: white;
+  background-color: #03045E;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  width: 30%;
+}
+
+.botonForm:hover {
+  background-color: white;
+  color: #03045E;
+}
+
+footer {
+  background-color: #03045E;
+  border-top: solid 2px #00011f;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  margin-left: -10px;
+  margin-bottom: -10px;
+  margin-right: -10px;
+}
+
+.textoFooter {
+  text-align: center;
+  color: white;
+}
+
+footer section ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+footer section ul li {
+  display: inline-block;
+  margin: 10px;
+  color: white;
+}
+
+footer section img {
+  margin: auto;
+  display: block;
+}
+
+.sectionFooter {
+  padding-bottom: 100px;
+}
+
+.logoFacebook {
+  width: 50px;
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+.logoInstagram {
+  width: 50px;
+  -ms-grid-column: 3;
+  grid-column: 3;
+}
+
+.logoYoutube {
+  width: 60px;
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+footer div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5fr 1fr 1fr 1fr 5fr;
+      grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
+}
+
+.colorFondo {
+  background-color: #CAF0F8;
+}
+/*# sourceMappingURL=styles.css.map */

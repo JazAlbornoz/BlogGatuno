@@ -1,0 +1,105 @@
+.sectionContacto{
+    margin-top: 30px;
+    padding-bottom: 70px;
+    padding-left: 100px;
+    display: grid;
+}
+    @media screen and (min-width: 882px){
+        .sectionContacto {
+            grid-template-columns: 50% 50%;
+        }
+    }
+    @media screen and (max-width: 882px){
+        .sectionContacto {
+            grid-template-columns: 100%;
+        }
+    }  
+.imgGato{
+    width: 70%;
+    border-radius: 5px;
+}
+
+.sectionContacto ul li{
+    margin-top: 10px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 10px;
+}
+.listContacto{
+    list-style-type: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: #03045E;
+}
+.gatoForm{
+    width: 60%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.formulario{
+    margin-top: 10px;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    display: grid;
+}
+@media screen and (min-width: 882px){
+    .formulario {
+        grid-template-columns: 40% 60%;
+    }
+}
+@media screen and (max-width: 882px){
+    .formulario {
+        padding: 20px;
+        padding-bottom: 70px;
+        grid-template-columns: 100%;
+    }
+    .gatoForm{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.form{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+.labelNombre{
+    grid-row: 1;
+    margin-top: 10px;
+}
+.nombre{
+    width: 70%;
+    height: 70%;
+    grid-row: 2;
+    margin-top: -10px;
+}
+.labelCorreo{
+    grid-row: 3;
+    margin-top: 5px;
+}
+.correo{
+    width: 70%;
+    height: 70%;
+    grid-row: 4;
+    margin-top: -15px;
+}
+.botonForm{
+    text-decoration: none;
+    text-decoration-line: none;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    background-color: #03045E;
+    &:hover{
+        background-color: white;
+        color: #03045E;
+    }
+    grid-row: 5;
+    width: 30%;
+}
