@@ -1,24 +1,21 @@
 
-//Buscador de articulos
 $(document).ready(function(){
-    $('#buscador').keyup(function(){
-       var nombres = $('.titulosArt');
-       var buscando = $(this).val();
-       var item='';
-       for( var i = 0; i < nombres.length; i++ ){
-           item = $(nombres[i]).html().toLowerCase();
-            for(var x = 0; x < item.length; x++ ){
-                if( buscando.length == 0 || item.indexOf( buscando ) > -1 ){
-                    $(nombres[i]).parents('.item').show(); 
-                }else{
-                     $(nombres[i]).parents('.item').hide();
-                }
-            }
-       }
-    });
+  $('#buscador').keyup(function(){
+     var nombres = $('.titulosArt');
+     var buscando = $(this).val();
+     var item='';
+     for( var i = 0; i < nombres.length; i++ ){
+         item = $(nombres[i]).html().toLowerCase();
+          for(var x = 0; x < item.length; x++ ){
+              if( buscando.length == 0 || item.indexOf( buscando ) > -1 ){
+                  $(nombres[i]).parents('.item').show(); 
+              }else{
+                   $(nombres[i]).parents('.item').hide();
+              }
+          }
+     }
   });
-
-  //Desplegable
+});
 
 
 function myFunction() {
@@ -38,7 +35,7 @@ function myFunction() {
     }
   }
 
-//Artículos por orden alfabético
+
 const articulosArray = [
   {
     titulo: "Curiosidades sobre los gatos",
@@ -91,7 +88,6 @@ const articulosArray = [
 ];
 
 
-
 const contenedorArticulos = document.querySelector('#contenedorArticulos');
 
 
@@ -128,7 +124,7 @@ const ordenarAlfabeticamente = ( array ) => {
     if (a.titulo < b.titulo) {
       return -1;
     }
-    // a must be equal to b
+
     return 0;
   })
   let html = generarHTMLArticulo(arrayOrdenado);
@@ -147,7 +143,7 @@ const ordenarPorTiempo = ( array ) => {
     if (a.tiempo < b.tiempo) {
       return -1;
     }
-    // a must be equal to b
+ 
     return 0;
   })
   let html = generarHTMLArticulo(arrayOrdenado);
@@ -164,7 +160,7 @@ const ordenarPorFecha = ( array ) => {
     if (a.publicado < b.publicado) {
       return -1;
     }
-    // a must be equal to b
+
     return 0;
   })
   let html = generarHTMLArticulo(arrayOrdenado);
@@ -172,23 +168,9 @@ const ordenarPorFecha = ( array ) => {
   contenedorArticulos.innerHTML = html;
 }
 
-//Envío de formulario de contacto
 
-const nombre = document.getElementsByClassName(".nombreAside");
 
-const correo = document.getElementsByClassName (".correoAside");
 
-const URLGET   = "https://jsonplaceholder.typicode.com/posts"
-//Declaramos la información a enviar
-const infoPost =  { nombre: $(".nombreAside"), correo: $("correoAside") }
-//Agregamos un botón con jQuery
-$(".botonFormAside").click(() => { 
-    $.post(URLGET, infoPost ,(respuesta, estado) => {
-        if(estado === "success"){
-            $("body").prepend(`<div>
-Gracias ${respuesta.nombre} ! Tus datos fueron guardados con éxito!
-</div>`);
-        }  
-    });
-});
+
+
 

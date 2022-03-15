@@ -1,4 +1,4 @@
-header section{
+.headerSitio{
     background-color: transparent;
     padding-top: 10px;
     padding-left: 30px;
@@ -7,22 +7,22 @@ header section{
     display: grid;
 }
 @media screen and (max-width: 768px){
-    header section {
+    .headerSitio {
         grid-template-columns: 100%;
     }
 }
-header section img{
+.headerSitio img{
     margin-left: 40px;
 }
-header section nav ul{ 
+.headerSitio nav ul{ 
     list-style-type: none;
 }
 @media screen and (max-width: 768px){
-    header section nav ul {
+    .headerSitio nav ul {
         margin-left: 0px;
     }
 }
-header section nav ul li{
+.headerSitio nav ul li{
     display: inline-block;
     margin-left: 60px;
     margin-top: 70px;
