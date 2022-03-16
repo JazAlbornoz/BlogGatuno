@@ -80,25 +80,27 @@
 </section>
     <section class="sectionComent">
      <p class="tituloComent">Comentarios:</p>
-         <section class="sectionComentPagArt">
+         <section id="sectionComent" class="sectionComentPagArt nuevosComentColor">
              <div class="imgComent">
                 <img src="./imagenes/user_comentarios.webp" alt="imagen vacia" class="imagenUsuario">
              </div>
           <div class="contComent">
           <p>Jazmín Albornoz</p>
           <hr>
-          <p>Acá va el texto de prueba</p>
+          <p>Este es un comentario de ejemplo. Su finalidad es mostrar cómo debería verse el nuevo comentario.</p>
           </div>
          </section>
+         <br>
+         <br>
 
-         <section id="nuevosComentarios" class="nuevosComentarios sectionComentPagArt"></section>
-
-         <section id="agregarComentarios" class="agregarComentarios">
+         <section id="nuevosComentarios" class="nuevosComentarios sectionComentPagArt nuevosComentColor"></section>
+         <section id="sectionIntermedia"></section>
+         <section id="agregarComentarios" class="agregarComentarios nuevosComentColor">
              <p>Agregar comentarios</p>
           <input class="inputNombreComent inputComent" type="text" placeholder="Escribe tu nombre" size="40">
           <input class="inputComentComent inputComent" type="text" placeholder="Escribe tu comentario..." size="130">
+          <br>
           <button class="buttonPublicarComent buttonComent" onclick="publicarArt()">Publicar</button>
-          <button class="buttonCancelarComent buttonComent">Cancelar</button>
          </section>
     </section>
 </section>

@@ -112,9 +112,11 @@ const generarHTMLArticulo = (array) => {
   return htmlArticulos;
 }
 
+
 let htmlArticulos = generarHTMLArticulo(articulosArray);
 
 contenedorArticulos.innerHTML = htmlArticulos;
+
 
 
 const ordenarAlfabeticamente = ( array ) => {
@@ -169,8 +171,6 @@ const ordenarPorFecha = ( array ) => {
 
   contenedorArticulos.innerHTML = html;
 }
-
-
 
 
 
