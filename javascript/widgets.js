@@ -42,7 +42,7 @@ const articulosArray = [
     publicado: 2020,
     tiempo: 7,
     img: "./imagenes/articulo_4_inicio.webp",
-    link: "#",
+    link: "./GatosNegrosMalaSuerte.html",
     parrafo: "No cabe duda que los gatos son una excelente compañía. Son perfectos cómplices para las personas que buscan un compañero con quien descansar, que le guste pasar momentos tranquilos y sobretodo aquel que busca un amigo fiel."
   },
   {
@@ -50,7 +50,7 @@ const articulosArray = [
     publicado: 2019,
     tiempo: 10 ,
     img: "./imagenes/articulo_1_inicio.webp",
-    link: "#",
+    link: "./GatosNegrosMalaSuerte.html",
     parrafo: "No cabe duda que los gatos son una excelente compañía. Son perfectos cómplices para las personas que buscan un compañero con quien descansar, que le guste pasar momentos tranquilos y sobretodo aquel que busca un amigo fiel."
   },
   {
@@ -58,7 +58,7 @@ const articulosArray = [
     publicado: 2012,
     tiempo: 5 ,
     img: "./imagenes/articulo_2_inicio.webp",
-    link: "#",
+    link: "./GatosNegrosMalaSuerte.html",
     parrafo: "No cabe duda que los gatos son una excelente compañía. Son perfectos cómplices para las personas que buscan un compañero con quien descansar, que le guste pasar momentos tranquilos y sobretodo aquel que busca un amigo fiel."
   },
   {
@@ -66,7 +66,7 @@ const articulosArray = [
     publicado: 2014,
     tiempo: 3,
     img: "./imagenes/articulo_3_inicio.webp",
-    link: "#",
+    link: "./GatosNegrosMalaSuerte.html",
     parrafo: "Con el número de casos de cáncer al alza en todo el mundo, la búsqueda de una cura para esta enfermedad es una prioridad para muchos investigadores."
   },
   {
@@ -74,7 +74,7 @@ const articulosArray = [
     publicado: 2012,
     tiempo: 8 ,
     img: "./imagenes/articulo_4_inicio.webp",
-    link: "#",
+    link: "./GatosNegrosMalaSuerte.html",
     parrafo: "Aunque atribuir la mala suerte a cruzarse con un gato negro es solo fruto de la superstición, un estudio de científicos del Long Island College Hospital de Nueva York reveló hace poco que..."
   },
   {
@@ -82,10 +82,11 @@ const articulosArray = [
     publicado: 2013,
     tiempo: 4 ,
     img: "./imagenes/articulo_1_inicio.webp",
-    link: "#",
+    link: "./GatosNegrosMalaSuerte.html",
     parrafo: "El tigre siberiano comparte un 95,6 % de su genoma con el gato doméstico, del que se diferenció hace aproximadamente 10,8 millones de años..."
   }
 ];
+
 
 
 const contenedorArticulos = document.querySelector('#contenedorArticulos');
@@ -114,6 +115,7 @@ const generarHTMLArticulo = (array) => {
 let htmlArticulos = generarHTMLArticulo(articulosArray);
 
 contenedorArticulos.innerHTML = htmlArticulos;
+
 
 const ordenarAlfabeticamente = ( array ) => {
   contenedorArticulos.innerHTML = "";
