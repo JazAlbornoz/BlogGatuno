@@ -1,5 +1,5 @@
 
-function publicarArt(){
+function publicarComent(){
 
 const comentariosNombre = document.querySelector('.inputNombreComent').value;
 
@@ -15,7 +15,7 @@ nuevosComentarios.innerHTML = `<section id="sectionComent" class="sectionComentP
                                <p>${comentariosNombre}</p>
                                <hr>
                                <p>${comentariosComentario}</p>
-                               <a class="menu" onclick = "BorrarArt()" style="color: #00011f; font-size: 10px" >Borrar comentario</a>
+                               <a class="menu" onclick = "BorrarComent()" style="color: #00011f; font-size: 10px" >Borrar comentario</a>
                                </div>
                                </section>
                                `;
@@ -28,11 +28,13 @@ sectionIntermedia.insertBefore(nuevosComentarios, sectionIntermedia.children[0])
 
 }
 
-function BorrarArt(){
-    
+function BorrarComent(){
+
 nuevosComentarios.innerHTML = `<p>Tu comentario ha sido borrado con éxito</p>`;
 
 document.body.appendChild(nuevosComentarios);
+
+sectionIntermedia.insertBefore(nuevosComentarios, sectionIntermedia.children[0]);
 
     }
 
