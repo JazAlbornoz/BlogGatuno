@@ -1,80 +1,7 @@
-.headerSitio {
-  background-color: transparent;
-  padding-top: 10px;
-  padding-left: 30px;
-  padding-right: 10px;
-  border-bottom: solid 2px black;
-  display: grid; }
 
-@media screen and (max-width: 768px) {
-  .headerSitio {
-    grid-template-columns: 100%; } }
-
-.headerSitio img {
-  margin-left: 40px; }
-
-.headerSitio nav ul {
-  list-style-type: none; }
-
-@media screen and (max-width: 768px) {
-  .headerSitio nav ul {
-    margin-left: 0px; } }
-
-.headerSitio nav ul li {
-  display: inline-block;
-  margin-left: 60px;
-  margin-top: 70px; }
-
-.menu {
-  color: white;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  text-transform: capitalize;
-  text-align: right; }
-  .menu:hover {
-    color: #CAF0F8; }
-
-.botonCerrar {
-  width: 10%;
-  height: 10%;
-  float: left;
-  margin: 0px;
-  border: 0px;
-  background-color: transparent; }
-
-.offcanvas {
-  background-color: #00011f; }
-
-.btn-close {
-  filter: invert(0.9); }
-
-.navbar-brand {
-  width: 30%; }
-
-.colorFondoCabecera {
-  background-color: #00011f; }
-
-.iconos {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  text-align: center;
-  border-bottom: solid 2px gray;
-  background-color: #00011f; }
-
-.iconos ul li {
-  color: #CAF0F8;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  font-size: 20px;
-  text-decoration: none;
-  display: inline-block;
-  padding-top: 30px;
-  margin-bottom: 10px; }
-
-.iconoGatuno {
-  width: 15%;
-  margin-right: 5px; }
+@import url(blog.css);
+@import url(header.css);
+@import url(newArt.css);
 
 .cabecera {
   margin-top: -200px;
@@ -168,144 +95,7 @@
   grid-template-columns: 5fr 1fr 1fr 1fr 5fr;
   grid-template-rows: 10fr 10fr 10fr 10fr; }
 
-.articulos {
-  background-color: #CAF0F8;
-  margin-top: -40px;
-  margin-bottom: auto;
-  display: grid;
-  padding-left: 70px; }
 
-@media screen and (max-width: 1186px) {
-  .articulos {
-    grid-template-columns: 50% 50%; } }
-
-@media screen and (min-width: 1186px) {
-  .articulos {
-    grid-template-columns: 25% 25% 25% 25%; } }
-
-@media screen and (max-width: 882px) {
-  .articulos {
-    grid-template-columns: 100%;
-    padding-left: 20px; } }
-
-.card {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.37); }
-
-.card-body {
-  height: 350px; }
-
-.card-title {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  padding-top: 10px; }
-
-.card-subtitle {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  padding-top: 10px; }
-
-.botonCard {
-  background-color: #03045E;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px; }
-  .botonCard:hover {
-    background-color: #00011f;
-    color: white; }
-
-.asideQuienesSomos {
-  display: flex;
-  justify-content: center; }
-
-.imagenBlog {
-  width: 100%;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  padding: 10;
-  margin: 10; }
-
-.artBlog {
-  border: solid 2px #00011f77;
-  border-radius: 10px;
-  box-shadow: 3px 3px 17px rgba(0, 0, 0, 0.37);
-  margin-right: 70px;
-  margin-left: 30px;
-  width: 350px;
-  height: 550px; }
-
-.gatoArt {
-  width: 100%;
-  border-top-left-radius: 7px;
-  border-top-right-radius: 7px;
-  margin-bottom: -265px;
-  margin-top: -100px; }
-
-.botonesArt {
-  list-style-type: none;
-  text-align: center; }
-
-.botonesArt li {
-  background-color: grey;
-  padding: 10px;
-  border-radius: 40px;
-  display: inline-block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px; }
-
-.paginationBlog {
-  color: #03045E; }
-
-.sectionboton {
-  background-color: #CAF0F8;
-  display: flex;
-  justify-content: center; }
-
-.boton {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  text-decoration: none;
-  text-decoration-line: none;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin: 10px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-radius: 5px;
-  color: white;
-  background-color: #03045E; }
-  .boton:hover {
-    background-color: white;
-    color: #03045E; }
-
-.sectionArt {
-  display: grid; }
-
-@media screen and (max-width: 1186px) {
-  .sectionArt {
-    grid-template-columns: 50% 50%; } }
-
-@media screen and (min-width: 1186px) {
-  .sectionArt {
-    grid-template-columns: 25% 25% 25% 25%; } }
-
-@media screen and (max-width: 882px) {
-  .sectionArt {
-    grid-template-columns: 100%;
-    padding-left: 20px; } }
-
-.botonArtBlog {
-  background-color: #00011f;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  font-weight: 300;
-  border-radius: 5px;
-  padding: 10px;
-  margin-left: 10px;
-  margin-bottom: 5px; }
 
 .buscarBoton {
   grid-column: 4;
@@ -543,6 +333,11 @@
 .inputComent {
   border-radius: 5px;
   margin-top: 5px; }
+
+.inputComentComent{
+  border-radius: 5px;
+  margin-top: 5px;
+}
 
 .buttonComent {
   margin-top: 5px;
