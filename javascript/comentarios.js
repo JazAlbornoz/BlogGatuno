@@ -26,6 +26,10 @@ const sectionIntermedia = document.getElementById('sectionIntermedia');
 
 sectionIntermedia.insertBefore(nuevosComentarios, sectionIntermedia.children[0]);
 
+
+localStorage.setItem("Nombre", comentariosNombre);
+localStorage.setItem("Apellido", comentariosComentario);
+
 }
 
 function BorrarComent(){
@@ -35,6 +39,9 @@ nuevosComentarios.innerHTML = `<p>Tu comentario ha sido borrado con éxito</p>`;
 document.body.appendChild(nuevosComentarios);
 
 sectionIntermedia.insertBefore(nuevosComentarios, sectionIntermedia.children[0]);
+
+localStorage.clear();
+
 
     }
 
