@@ -137,7 +137,7 @@
     margin-left: 10px;
     margin-bottom: 5px; }
 
-.contenedorArticulos{
-    display: flex;
-    align-items: flex-start;
+.favoritos-item-art{
+    max-width: 114px;
+    max-height: 19px;
 }

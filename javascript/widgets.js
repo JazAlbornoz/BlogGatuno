@@ -36,8 +36,9 @@ function myFunction() {
   }
 
 
-const articulosArray = [
+ const articulosArray = [
   {
+    id: 1,
     titulo: "Curiosidades sobre los gatos",
     publicado: 2020,
     tiempo: 7,
@@ -46,6 +47,7 @@ const articulosArray = [
     parrafo: "No cabe duda que los gatos son una excelente compañía. Son perfectos cómplices para las personas que buscan un compañero con quien descansar, que le guste pasar momentos tranquilos y sobretodo aquel que busca un amigo fiel."
   },
   {
+    id: 2,
     titulo: "Adoptar un gato: 10 cosas que debes saber" ,
     publicado: 2019,
     tiempo: 10 ,
@@ -54,6 +56,7 @@ const articulosArray = [
     parrafo: "No cabe duda que los gatos son una excelente compañía. Son perfectos cómplices para las personas que buscan un compañero con quien descansar, que le guste pasar momentos tranquilos y sobretodo aquel que busca un amigo fiel."
   },
   {
+    id: 3,
     titulo: "Cinco buenas razones para adoptar un gato" ,
     publicado: 2012,
     tiempo: 5 ,
@@ -62,6 +65,7 @@ const articulosArray = [
     parrafo: "No cabe duda que los gatos son una excelente compañía. Son perfectos cómplices para las personas que buscan un compañero con quien descansar, que le guste pasar momentos tranquilos y sobretodo aquel que busca un amigo fiel."
   },
   {
+    id: 4,
     titulo: "La caca de gato puede ayudar a curar el cáncer",
     publicado: 2014,
     tiempo: 3,
@@ -70,6 +74,7 @@ const articulosArray = [
     parrafo: "Con el número de casos de cáncer al alza en todo el mundo, la búsqueda de una cura para esta enfermedad es una prioridad para muchos investigadores."
   },
   {
+    id: 5,
     titulo: "¿Los gatos negros dan mala suerte?" ,
     publicado: 2012,
     tiempo: 8 ,
@@ -78,6 +83,7 @@ const articulosArray = [
     parrafo: "Aunque atribuir la mala suerte a cruzarse con un gato negro es solo fruto de la superstición, un estudio de científicos del Long Island College Hospital de Nueva York reveló hace poco que..."
   },
   {
+    id: 6,
     titulo: "El tigre y el gato comparten un 95% de sus genes" ,
     publicado: 2013,
     tiempo: 4 ,
@@ -102,6 +108,7 @@ const generarHTMLArticulo = (array) => {
         <h3><label class="titulosArt titulosBlog">${articulo.titulo}</label></h3>
         <p class="metadatos">${articulo.tiempo} min de lectura</p>
         <p class="parrafoArt" style="color: #00011f98 ">Publicado en ${articulo.publicado}</p>
+        <img onClick="cambiar()" ondblclick="borrar()" id="addFav" class="favoritos-item-art addFav" src="./imagenes/corazon-icono-negro-sRelleno.png" alt="favoritos">
         <p class="parrafoArt">${articulo.parrafo}</p>
         <a href=${articulo.link} class="botonArtBlog">Leer más...</a>
       </div>
@@ -112,10 +119,31 @@ const generarHTMLArticulo = (array) => {
   return htmlArticulos;
 }
 
-
 let htmlArticulos = generarHTMLArticulo(articulosArray);
 
 contenedorArticulos.innerHTML = htmlArticulos;
+
+
+
+localStorage.setItem("articulos", JSON.stringify(articulosArray));
+
+function cambiar (id, titulo) {
+
+  document.getElementById('addFav').src = "./imagenes/corazon-icono-negro.png";
+
+  let articulosStorage = JSON.parse(localStorage.getItem("articulos"));
+  let articuloEncontrado = articulosStorage.find(elemento => elemento.id === id);
+
+  articuloEncontrado.titulo = titulo;
+  localStorage.setItem("articulos", JSON.stringify(articulosStorage));
+  
+ }
+
+ function borrar () {
+  document.getElementById('addFav').src = "./imagenes/corazon-icono-negro-sRelleno.png";
+  localStorage.setItem();
+ }
+
 
 
 

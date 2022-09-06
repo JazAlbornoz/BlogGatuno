@@ -74,5 +74,12 @@
     margin-bottom: 10px; }
   
   .iconoGatuno {
-    width: 15%;
+    width: 10%;
     margin-right: 5px; }
+
+  .favoritos-item{
+    margin-top: -5px;
+    margin-left: -20px;
+    max-width: 124px;
+    max-height: 29px;
+  }

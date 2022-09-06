@@ -1,7 +1,7 @@
 
 @import url(blog.css);
 @import url(header.css);
-@import url(newArt.css);
+@import url(favoritos.css);
 
 .cabecera {
   margin-top: -200px;
@@ -615,3 +615,28 @@ footer section img {
 
 .colorFondo {
   background-color: #CAF0F8; }
+
+.cabeceraFavoritos{
+  margin-top: -200px;
+  background-image: url(../imagenes/fondo_cabecera.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 150px;
+  padding-top: 200px;
+  border-bottom: solid 2px gray;
+}
+
+.cardApi{
+  background-color: #ddd;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 20px;
+  box-shadow: #000000a2 5px;
+}
+li{
+  text-decoration: none;
+}
