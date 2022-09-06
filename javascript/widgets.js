@@ -136,14 +136,13 @@ function cambiar (id, titulo) {
 
   articuloEncontrado.titulo = titulo;
   localStorage.setItem("articulos", JSON.stringify(articulosStorage));
-  
+
  }
 
  function borrar () {
   document.getElementById('addFav').src = "./imagenes/corazon-icono-negro-sRelleno.png";
-  localStorage.setItem();
+  localStorage.removeItem();
  }
-
 
 
 
